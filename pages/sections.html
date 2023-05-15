@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccions</title>
+</head>
+<body>
+    <header>
+        <h1>Etiquetes de secció en HTML</h1>
+        <p>Les etiquetes de seccions en HTML s'utilitzen per estructurar el contingut de les pàgines web i millorar la seva accessibilitat per als usuaris i motors de cerca. Això ajuda a organitzar i categoritzar el contingut per seccions lògiques, com ara capçaleres, peus de pàgina, menús, contingut principal i altres seccions. Això també ajuda a millorar la semàntica del codi HTML, facilitant la comprensió del contingut de la pàgina per part dels lectors de pantalla i altres tecnologies d'assistència.</p>
+    </header>
+    <main>
+        <div>
+            <h3>Les etiquetes de seccó són les següents:</h3>
+            <ul>
+                <li><b><code>&lt;header&gt;</code></b>: Defineix l'encapçalament de la pàgina o de seccions específiques.</li>
+                <li><b><code>&lt;nav&gt;</code></b>: Defineix una secció de navegació.</li>
+                <li><b><code>&lt;main&gt;</code></b>: Defineix el contingut principal de la pàgina.</li>
+                <li><b><code>&lt;section&gt;</code></b>: Defineix una secció dins del document.</li>
+                <li><b><code>&lt;article&gt;</code></b>: Defineix un article independent dins del document.</li>
+                <li><b><code>&lt;aside&gt;</code></b>: Defineix una secció d'informació complementària, que pot ser visualitzada a banda del contingut principal.</li>
+                <li><b><code>&lt;footer&gt;</code></b>: Defineix el peu de pàgina de la pàgina o de seccions específiques.</li>
+                <li><b><code>&lt;address&gt;</code></b>: Defineix dades de contacte de la pàgina o l'autor.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>role="navigation"</h3>
+            <p>L'atribut role="navigation" s'utilitza per indicar que un element HTML és una secció de navegació en una pàgina web. Això ajuda als lectors de pantalla i altres tecnologies d'assistència a identificar i navegar per la secció de navegació de la pàgina amb més facilitat. És important destacar que l'ús correcte d'aquest atribut no només ajuda a millorar l'accessibilitat de la pàgina web, sinó que també ajuda a millorar la seva estructura semàntica i la comprensió per part dels motors de cerca. Tot i això és més recomenable utilitzar l'etiqueta <code>&lt;nav&gt;</code> en aquests casos, i quan s'utilitza aquesta etiqueta fer ús del role="navigation" és redundant.</p>
+        </div>
+        <!-- Example HTML document -->
+        <header>
+            <h3><b> Exemple d'un document HTML:</b></h3>
+            <p>Lloc per a l'encapçalament de la pàgina</p>
+            <nav>
+                <p>Espai per a la navegació de la pàgina web</p>
+                    <a href="../index.html">Inici</a>
+                    <a href="./texts.html">Texts</a>
+                    <a href="./images.html">Imatges</a>
+                    <a href="./links.html">Links</a>
+                    <a href="./lists.html">Llistes</a>
+                    <a href="./tables.html">Taules</a>
+                    <a href="./forms.html">Formularis</a>
+                    <a href="./media.html">Media</a>
+                    <a href="./metas.html">Metas</a>
+            </nav>
+        </header>
+        <main>
+            <p>Contingut de la pàgina</p>
+            <section>
+                <div>
+                    <p>Això és un contenidor dins d'una secció</p>
+                    <aside>Informació secundaria dins la secció</aside>
+                </div>
+                <div>
+                    <p>Un altre contenidor dins la mateixa secció</p>
+                </div>
+            </section>
+            <section>
+                <article>Aquest és un article dins d'una altre secció</article>
+            </section>
+        </main>
+        <footer>
+            <p>Peu de la pàgina</p>
+            <address>Informació de contacte</address>
+        </footer>
+         <!-- Example HTML structure -->
+         <h3><b> Exemple de l'estructura d'un document HTML:</b></h3>
+         <b><code>&lt;header&gt;</code></b><br>
+            <p>Lloc per a l'encapçalament de la pàgina</p>
+            <b><code>&lt;nav&gt;</code></b><br>
+                <p>Espai per a la navegació de la pàgina web</p>
+                    <a href="../index.html">Inici</a>
+                    <a href="./texts.html">Texts</a>
+                    <a href="./images.html">Imatges</a>
+                    <a href="./links.html">Links</a>
+                    <a href="./lists.html">Llistes</a>
+                    <a href="./tables.html">Taules</a>
+                    <a href="./forms.html">Formularis</a>
+                    <a href="./media.html">Media</a>
+                    <a href="./metas.html">Metas</a><br>
+                <b><code>&lt;/nav&gt;</code></b><br>
+        <b><code>&lt;/header&gt;</code></b><br>
+        <b><code>&lt;main&gt;</code></b><br>
+            <p>Contingut de la pàgina</p>
+            <b><code>&lt;section&gt;</code></b><br>
+            <b><code>&lt;div&gt;</code></b>
+                    <p>Això és un contenidor dins d'una secció</p>
+                    <b><code>&lt;aside&gt;</code></b>Informació secundaria dins la secció<b><code>&lt;/aside&gt;</code></b><br>
+            <b><code>&lt;/div&gt;</code></b><br>
+            <b><code>&lt;div&gt;</code></b>
+                    <p>Un altre contenidor dins la mateixa secció</p>
+            <b><code>&lt;/div&gt;</code></b><br>
+            <b><code>&lt;/section&gt;</code></b><br>
+           <b> <code>&lt;sectoin&gt;</code></b><br>
+                <b><code>&lt;article&gt;</code></b>Aquest és un article dins d'una altre secció<b><code>&lt;article&gt;</code></b><br>
+            <b><code>&lt;/section&gt;</code></b><br>
+        <b><code>&lt;/main&gt;</code></b><br>
+        <b><code>&lt;footer&gt;</code></b><br>
+            <p>Peu de la pàgina</p>
+            <b><code>&lt;address&gt;</code></b>Informació de contacte<b><code>&lt;/address&gt;</code></b><br>
+        <b><code>&lt;/footer&gt;</code></b>
+    </main>
+    <footer>
+        <a href="../index.html">Torna al inici</a>
+    </footer>
+</body>
+</html>
